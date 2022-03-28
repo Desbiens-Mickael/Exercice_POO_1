@@ -9,7 +9,6 @@ class Bicycle
 
     private int $nbWheels = 2;
 
-// ///////// constructeur pour imposer des paramètres à l'instanciation de l'objet ////////////////////////////////////////////
 
     public function __construct(string $color, int $nbSeats, int $nbWheels)
     {
@@ -17,21 +16,13 @@ class Bicycle
         $this->nbSeats = $nbSeats;
         $this->nbWheels = $nbWheels;
     }
-// //////// nouvel syntaxe pour le constructeur depuis PHP 8 /////////////// 
-// ont peut créer l'atribue directement dans le construct
 
-    // public function __construct(private string $color) {};
-
-
-
-// ///////////// geteur pour récupérer les infos ///////////////////////
 
     public function getColor(): string
     {
         return $this->color;
     }
 
-// //////////// seteur pour changer l'atribut de la classe //////////////////
 
     public function setColor(string $color): void
     {
@@ -46,7 +37,6 @@ class Bicycle
     }
 
 
-// ///////////// geteur pour récupérer les infos ///////////////////////
 
     public function getCurrentSpeed(): int
     {
@@ -54,7 +44,6 @@ class Bicycle
     }
 
 
-// //////////// seteur pour changer l'atribut de la classe //////////////////
 
     public function setCurrentSpeed(int $currentSpeed): void
     {
