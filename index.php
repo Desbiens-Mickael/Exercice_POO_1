@@ -1,11 +1,11 @@
 <?php
 require_once 'Bicycle.php';
-require_once 'Vehicle.php';
+require_once 'Car.php';
 
-$bike = new Bicycle("rouge", 2, 2);
+$bike_1 = new Bicycle("rouge", 2, 2);
 $bike_2 = new Bicycle("bleu", 1, 2);
-$car = new Vehicle("noir", 4, "éssence");
-$car_2 = new Vehicle("jaune", 2, "éléctrique");
+$car_1 = new Car("noir", 4, "éssence");
+$car_2 = new Car("jaune", 2, "éléctrique");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,22 +17,22 @@ $car_2 = new Vehicle("jaune", 2, "éléctrique");
 </head>
 <body>
     <?php
-    echo $bike->forward();
-    echo '<br> Vitesse du vélo : ' . $bike->getCurrentSpeed() . ' km/h' . '<br>';
-    echo $bike->brake();
-    echo '<br> Vitesse du vélo : ' . $bike->getCurrentSpeed() . ' km/h' . '<br>';
-    echo $bike->brake();  
+    echo $bike_1->forward();
+    echo '<br> Vitesse du vélo : ' . $bike_1->getCurrentSpeed() . ' km/h' . '<br>';
+    echo $bike_1->brake();
+    echo '<br> Vitesse du vélo : ' . $bike_1->getCurrentSpeed() . ' km/h' . '<br>';
+    echo $bike_1->brake();  
     ?>
 
     <br><br><br>
 
     <?php
-    echo $car->start()."<br>";
-    echo $car->forward();
-    echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
-    echo $car->brake();
-    echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
-    echo $car->brake();  
+    echo $car_1->start()."<br>";
+    echo $car_1->forward();
+    echo '<br> Vitesse de la voiture : ' . $car_1->getCurrentSpeed() . ' km/h' . '<br>';
+    echo $car_1->brake();
+    echo '<br> Vitesse de la voiture : ' . $car_1->getCurrentSpeed() . ' km/h' . '<br>';
+    echo $car_1->brake();  
     ?>
 
     <br><br><br>
