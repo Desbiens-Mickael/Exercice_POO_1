@@ -1,5 +1,5 @@
 <?php
-class Vehicle
+class Car
 {
     private string $color;
     private int $nbWheels;
